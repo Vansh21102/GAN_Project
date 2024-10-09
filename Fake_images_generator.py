@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 
-file_path = 'C:\\Users\\vansh\\OneDrive\\Desktop\\programs\\GAN project\\Fake_images'
+file_path = 'file path to store fake images'
 
 for i in range(3729):
     fake_img = np.random.randint(0,255,(256,256,3))
