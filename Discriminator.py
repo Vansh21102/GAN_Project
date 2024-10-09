@@ -5,8 +5,8 @@ import cv2
 import tensorflow as tf
 from sklearn.model_selection import train_test_split
 
-R_img_file_path = "C:\\Users\\vansh\\OneDrive\\Desktop\\programs\\GAN project\\raw_anime"
-F_img_file_path = "C:\\Users\\vansh\\OneDrive\\Desktop\\programs\\GAN project\\Fake_images"
+R_img_file_path = "file path - REAL"
+F_img_file_path = "file path - FAKE"
 
 def create_training_data():
     training_data = []
@@ -75,7 +75,7 @@ Discriminator.add(tf.keras.layers.BatchNormalization())
 Discriminator.add(tf.keras.layers.Flatten())
 
 Discriminator.add(tf.keras.layers.Dense(32, activation = tf.keras.activations.relu))
-# Discriminator.add(tf.keras.layers.Dense(128, activation = tf.keras.activations.relu))
+Discriminator.add(tf.keras.layers.Dense(128, activation = tf.keras.activations.relu))
 Discriminator.add(tf.keras.layers.Dense(1, activation = tf.keras.activations.sigmoid))
 
 Discriminator.compile(optimizer = tf.keras.optimizers.Adamax(learning_rate = 0.001), loss = 'binary_crossentropy',metrics=['accuracy', tf.keras.metrics.TruePositives(name='true_positives'),tf.keras.metrics.TrueNegatives(name='true_negatives'),tf.keras.metrics.FalsePositives(name='false_positives'),tf.keras.metrics.FalseNegatives(name='false_negatives')])
