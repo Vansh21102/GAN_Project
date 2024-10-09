@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import cv2
 import tensorflow as tf
-from sklearn.model_selection import train_test_split
 
 Latent_dim = 100
 n_epochs = 100
