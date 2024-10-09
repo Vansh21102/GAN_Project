@@ -1,1 +1,1 @@
-This is an ongoing project and can randomly have issues where is seemingly stops working for no apparent reason
+THIS IS AN ONGOING PROJECT AND FOR THAT REASON IT HAS SOME ISSUES WHERE THE MODEL CAN STOP WORKING FOR NO APPARENT REASON
